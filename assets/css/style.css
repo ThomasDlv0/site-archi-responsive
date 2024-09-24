@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "sego";
+    src: url(../font/SEGOEUI.TTF);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sego", sans-serif ;
+}
+
+html {
+      font-weight: 400;
+      font-style: normal;
+}
+
+img, input{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 45px;
+}
+
+#menu {
+    display: none;
+}
+
+
+#projects, #about, #contact {
+    width: 85vw;
+    margin: 20px auto;
+}
+
+#projects h2, #about h2, #contact h2{
+    padding: 20px 0;
+    border-bottom: .01px solid darkgray;
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+#img-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/architect.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+}
+
+#img-header h1 span{
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    opacity: .8;
+    font-weight: 900;
+}
+
+/* Section project */
+
+#projects {
+    width: 85vw;
+    margin: 20px auto;
+}
+
+#gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.gallery-img img {
+    position: relative;
+}
+
+.gallery-img p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    width: max-content;
+}
+
+/* Section about */
+
+#about-fiche {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.about-content>div {
+    width: 100%;
+}
+
+.about-content h3 {
+    padding: 7px 0;
+    width: 100%;
+}
+
+.about-content p {
+    padding: 7px 0;
+    width: 100%;
+}
+
+.darkgrey {
+    color: gray;
+}
+
+.about-content a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #F1F1F1;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+/* Section contact */
+
+.contact-content-input input{
+    margin-top: 10px;
+    border: 1px solid darkgray;
+    padding: 5px 10px;
+}
+
+.contact-content-input input[type="submit"]{
+    margin-top: 20px;
+    width: max-content;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.contact-content-img {
+    margin-top: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 10vh;
+}
+
+footer a{
+    color: #fff;
+}
+
+@media screen and (min-width: 576px) {
+
+    #logo {
+        display: flex;
+        flex: 0.5;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+        flex: 0.5;
+    }
+
+    #menu ul{
+        display: flex;
+    }
+    #menu ul li{
+        padding: 0 10px;
+    }
+
+    #gallery {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-img {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 45%;
+    }
+
+    #about-fiche {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0 0;
+        width: 49%;
+    }
+
+    #img-header {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #contact {
+        margin-bottom: 0;
+    }
+
+    #gallery {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-img {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 23%;
+    }
+
+    #about-fiche {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-content {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 40px 0 0 0;
+        width: 24%;
+    }
+
+    .contact-content-img {}
+}
