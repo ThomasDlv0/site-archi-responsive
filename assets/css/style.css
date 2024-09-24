@@ -193,7 +193,6 @@ footer a{
 @media screen and (min-width: 576px) {
 
     #logo {
-        display: flex;
         flex: 0.5;
     }
 
