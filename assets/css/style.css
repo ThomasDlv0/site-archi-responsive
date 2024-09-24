@@ -126,6 +126,7 @@ nav {
 
 .about-content>div {
     width: 100%;
+    filter: grayscale(90%);
 }
 
 .about-content h3 {
@@ -133,13 +134,15 @@ nav {
     width: 100%;
 }
 
+.about-content h4 {
+    padding: 7px 0;
+    width: 100%;
+    color: gray;
+}
+
 .about-content p {
     padding: 7px 0;
     width: 100%;
-}
-
-.darkgrey {
-    color: gray;
 }
 
 .about-content a {
