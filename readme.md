@@ -1,4 +1,4 @@
-##maquette responsive design architect
+# maquette responsive design architect
 
 Site -> [exemple](https://thomasdlv0.github.io/site-archi-responsive/)
 
